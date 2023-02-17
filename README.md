@@ -67,7 +67,7 @@ W5300-TOE-C
 ┃   ┣ ioLibrary_Driver
 ┃   ┃   ┣ inc
 ┃   ┃   ┗ src
-┃   ┗ Timer
+┃   ┗ timer
 ┃       ┣ inc
 ┃       ┗ src
 ┣ Projects

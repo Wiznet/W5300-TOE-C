@@ -59,7 +59,7 @@ Therefore, in order to use the ST-LINK of the STM32 Nucleo-144 board, minor sett
 - [**HTTP**][link-http]
     - [**Server**][link-http_server]
 - [**Loopback**][link-loopback]
-- [**MQTT**][link-http]
+- [**MQTT**][link-mqtt]
     - [**Publish**][link-mqtt_publish]
     - [**Publish & Subscribe**][link-mqtt_publish_subscribe]
     - [**Subscribe**][link-mqtt_subscribe]
