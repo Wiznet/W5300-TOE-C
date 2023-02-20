@@ -33,6 +33,7 @@ extern "C"
 //#define APP_MQTT_SUBSCRIBE
 //#define APP_MQTT_PUBLISH_SUBSCRIBE
 //#define APP_SNTP
+//#define APP_TCP_CLIENT_OVER_SSL
 #define APP_LOOPBACK
 // ----------------------------------------------------------------------------------------------------
 
@@ -54,6 +55,7 @@ void mqtt_publish_demo(wiz_NetInfo *net_info);
 void mqtt_subscribe_demo(wiz_NetInfo *net_info);
 void mqtt_publish_subscribe_demo(wiz_NetInfo *net_info);
 void sntp_demo(wiz_NetInfo *net_info);
+void tcp_client_over_ssl_demo(wiz_NetInfo *net_info);
 void loopback_demo(wiz_NetInfo *net_info);
 
 #ifdef __cplusplus

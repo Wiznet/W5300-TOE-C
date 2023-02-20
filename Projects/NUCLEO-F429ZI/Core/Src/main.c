@@ -149,6 +149,9 @@ int main(void)
 #ifdef APP_SNTP
   sntp_demo(&net_info);
 #endif /* APP_SNTP */
+#ifdef APP_TCP_CLIENT_OVER_SSL
+  tcp_client_over_ssl_demo(&net_info);
+#endif /* APP_TCP_CLIENT_OVER_SSL */
 #ifdef APP_LOOPBACK
   loopback_demo(&net_info);
 #endif /* APP_LOOPBACK */

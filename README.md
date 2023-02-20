@@ -60,7 +60,8 @@ W5300-TOE-C
 ┃   ┃   ┣ publish
 ┃   ┃   ┣ publish_subscribe
 ┃   ┃   ┗ subscribe
-┃   ┗ sntp
+┃   ┣ sntp
+┃   ┗ tcp_client_over_ssl
 ┣ Libraries
 ┃   ┗ ioLibrary_Driver
 ┣ Port

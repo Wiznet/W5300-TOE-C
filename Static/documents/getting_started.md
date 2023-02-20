@@ -64,6 +64,7 @@ Therefore, in order to use the ST-LINK of the STM32 Nucleo-144 board, minor sett
     - [**Publish & Subscribe**][link-mqtt_publish_subscribe]
     - [**Subscribe**][link-mqtt_subscribe]
 - [**SNTP**][link-sntp]
+- [**TCP Client over SSL**][link-tcp_client_over_ssl]
 
 
 
@@ -90,3 +91,4 @@ Link
 [link-mqtt_publish_subscribe]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/mqtt/publish_subscribe
 [link-mqtt_subscribe]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/mqtt/subscribe
 [link-sntp]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/sntp
+[link-tcp_client_over_ssl]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/tcp_client_over_ssl

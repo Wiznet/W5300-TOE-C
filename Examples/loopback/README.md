@@ -42,6 +42,7 @@ uncomment **APP_LOOPBACK** and comment the rest of the defined demo application 
 //#define APP_MQTT_SUBSCRIBE
 //#define APP_MQTT_PUBLISH_SUBSCRIBE
 //#define APP_SNTP
+//#define APP_TCP_CLIENT_OVER_SSL
 #define APP_LOOPBACK
 // ----------------------------------------------------------------------------------------------------
 ```
