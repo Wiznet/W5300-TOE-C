@@ -11,7 +11,11 @@
  */
 #include <stdio.h>
 
+#if defined (STM32F429xx) || (STM32F439xx)
 #include "stm32f4xx_hal.h"
+#elif defined (STM32F767xx)
+#include "stm32f7xx_hal.h"
+#endif
 
 #include "wizchip_conf.h"
 #include "w5x00_bus.h"

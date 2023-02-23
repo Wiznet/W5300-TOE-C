@@ -22,6 +22,7 @@ STM32 Nucleo-144 boards support the list below.
 
 - [**NUCLEO-F429ZI**][link-nucleo-f429zi]
 - [**NUCLEO-F439ZI**][link-nucleo-f439zi]
+- [**NUCLEO-F767ZI**][link-nucleo-f767zi]
 
 And W5300 TOE Examples supports two IDEs.
 
@@ -51,6 +52,15 @@ And W5300 TOE Examples supports two IDEs.
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F439ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
     <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
   </tr>
+  <tr>
+    <td align=center rowspan="2">NUCLEO-F767ZI</td>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F767ZI/MDK-ARM"><b>MDK-ARM</b></td>
+    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+  </tr>
+  <tr>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F767ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
+    <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
+  </tr>
 </table>
 
 
@@ -73,11 +83,14 @@ W5300-TOE-C
 ┃   ┣ sntp
 ┃   ┗ tcp_client_over_ssl
 ┣ Libraries
-┃   ┗ ioLibrary_Driver
+┃   ┣ ioLibrary_Driver
+┃   ┗ mbedtls
 ┣ Port
 ┃   ┣ ioLibrary_Driver
 ┃   ┃   ┣ inc
 ┃   ┃   ┗ src
+┃   ┣ mbedtls
+┃   ┃   ┗ inc
 ┃   ┗ timer
 ┃       ┣ inc
 ┃       ┗ src
@@ -87,7 +100,12 @@ W5300-TOE-C
 ┃   ┃   ┣ Drivers
 ┃   ┃   ┣ MDK-ARM
 ┃   ┃   ┗ STM32CubeIDE
-┃   ┗ NUCLEO-F439ZI
+┃   ┣ NUCLEO-F439ZI
+┃   ┃   ┣ Core
+┃   ┃   ┣ Drivers
+┃   ┃   ┣ MDK-ARM
+┃   ┃   ┗ STM32CubeIDE
+┃   ┗ NUCLEO-F767ZI
 ┃       ┣ Core
 ┃       ┣ Drivers
 ┃       ┣ MDK-ARM
@@ -137,6 +155,7 @@ Link
 [link-w5300_toe_shield]: fill_in_the_blank
 [link-nucleo-f429zi]: https://www.st.com/en/evaluation-tools/nucleo-f429zi.html
 [link-nucleo-f439zi]: https://www.st.com/en/evaluation-tools/nucleo-f439zi.html
+[link-nucleo-f767zi]: https://www.st.com/en/evaluation-tools/nucleo-f767zi.html
 [link-getting_started]: https://github.com/Wiznet/W5300-TOE-C/blob/main/Static/documents/getting_started.md
 [link-datasheet_w5300]: https://docs.wiznet.io/img/products/w5300/W5300_DS_V134E.pdf
 [link-datasheet_w5300_toe_shield]: fill_in_the_blank
