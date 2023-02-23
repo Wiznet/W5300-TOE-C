@@ -21,6 +21,7 @@ The W5300 TOE examples use **W5300 TOE Shield** - ethernet I/O shield compatible
 STM32 Nucleo-144 boards support the list below.
 
 - [**NUCLEO-F429ZI**][link-nucleo-f429zi]
+- [**NUCLEO-F439ZI**][link-nucleo-f439zi]
 
 And W5300 TOE Examples supports two IDEs.
 
@@ -39,6 +40,15 @@ And W5300 TOE Examples supports two IDEs.
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F429ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
+    <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
+  </tr>
+  <tr>
+    <td align=center rowspan="2">NUCLEO-F439ZI</td>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F439ZI/MDK-ARM"><b>MDK-ARM</b></td>
+    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+  </tr>
+  <tr>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F439ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
     <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
   </tr>
 </table>
@@ -72,7 +82,12 @@ W5300-TOE-C
 ┃       ┣ inc
 ┃       ┗ src
 ┣ Projects
-┃   ┗ NUCLEO-F429ZI
+┃   ┣ NUCLEO-F429ZI
+┃   ┃   ┣ Core
+┃   ┃   ┣ Drivers
+┃   ┃   ┣ MDK-ARM
+┃   ┃   ┗ STM32CubeIDE
+┃   ┗ NUCLEO-F439ZI
 ┃       ┣ Core
 ┃       ┣ Drivers
 ┃       ┣ MDK-ARM
@@ -121,6 +136,7 @@ Link
 [link-w5300]: https://docs.wiznet.io/Product/iEthernet/W5300
 [link-w5300_toe_shield]: fill_in_the_blank
 [link-nucleo-f429zi]: https://www.st.com/en/evaluation-tools/nucleo-f429zi.html
+[link-nucleo-f439zi]: https://www.st.com/en/evaluation-tools/nucleo-f439zi.html
 [link-getting_started]: https://github.com/Wiznet/W5300-TOE-C/blob/main/Static/documents/getting_started.md
 [link-datasheet_w5300]: https://docs.wiznet.io/img/products/w5300/W5300_DS_V134E.pdf
 [link-datasheet_w5300_toe_shield]: fill_in_the_blank

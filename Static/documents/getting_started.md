@@ -16,10 +16,11 @@ These sections will guide you through a series of steps from configuring develop
 - [**W5300 TOE Shield**][link-w5300_toe_shield]
 - **One of the STM32 Nucleo-144 Boards**
     - [**NUCLEO-F429ZI**][link-nucleo-f429zi]
+    - [**NUCLEO-F439ZI**][link-nucleo-f439zi]
 - **Desktop or Laptop**
 - **USB Type-B Micro 5 Pin Cable**
 
-**※ Currently, W5300 TOE examples only support NUCLEO-F429ZI, so please refer to this.**
+**※ Currently, W5300 TOE examples only support NUCLEO-F429ZI and NUCLEO-F439ZI, so please refer to this.**
 
 
 
@@ -81,6 +82,7 @@ Link
 
 [link-w5300_toe_shield]: fill_in_the_blank
 [link-nucleo-f429zi]: https://www.st.com/en/evaluation-tools/nucleo-f429zi.html
+[link-nucleo-f439zi]: https://www.st.com/en/evaluation-tools/nucleo-f439zi.html
 [link-dhcp]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/dhcp
 [link-dns]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/dns
 [link-http]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/http
