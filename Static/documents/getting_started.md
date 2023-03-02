@@ -15,13 +15,15 @@ These sections will guide you through a series of steps from configuring develop
 
 - [**W5300 TOE Shield**][link-w5300_toe_shield]
 - **One of the STM32 Nucleo-144 Boards**
+    - [**NUCLEO-F207ZG**][link-nucleo-f207zg]
     - [**NUCLEO-F429ZI**][link-nucleo-f429zi]
     - [**NUCLEO-F439ZI**][link-nucleo-f439zi]
+    - [**NUCLEO-F756ZG**][link-nucleo-f756zg]
     - [**NUCLEO-F767ZI**][link-nucleo-f767zi]
 - **Desktop or Laptop**
 - **USB Type-B Micro 5 Pin Cable**
 
-**※ Currently, W5300 TOE examples only support NUCLEO-F429ZI, NUCLEO-F439ZI and NUCLEO-F767ZI, so please refer to this.**
+**※ Currently, W5300 TOE examples only support NUCLEO-F207ZG, NUCLEO-F429ZI, NUCLEO-F439ZI, NUCLEO-F756ZG and NUCLEO-F767ZI, so please refer to this.**
 
 
 
@@ -81,9 +83,11 @@ Please refer to 'README.md' in each example directory to detail guide for testin
 Link
 -->
 
-[link-w5300_toe_shield]: fill_in_the_blank
+[link-w5300_toe_shield]: https://docs.wiznet.io/Product/iEthernet/W5300/W5300-TOE-Shield
+[link-nucleo-f207zg]: https://www.st.com/en/evaluation-tools/nucleo-f207zg.html
 [link-nucleo-f429zi]: https://www.st.com/en/evaluation-tools/nucleo-f429zi.html
 [link-nucleo-f439zi]: https://www.st.com/en/evaluation-tools/nucleo-f439zi.html
+[link-nucleo-f756zg]: https://www.st.com/en/evaluation-tools/nucleo-f756zg.html
 [link-nucleo-f767zi]: https://www.st.com/en/evaluation-tools/nucleo-f767zi.html
 [link-dhcp]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/dhcp
 [link-dns]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/dns

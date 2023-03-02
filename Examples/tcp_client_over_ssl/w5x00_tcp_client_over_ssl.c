@@ -32,12 +32,17 @@
 #define SOCKET_SSL 0
 #define PORT_SSL 443
 
+#define SSL_SEND_PERIOD (1000 * 10) // unit : millisecond
+
 /**
  * ----------------------------------------------------------------------------------------------------
  * Variables
  * ----------------------------------------------------------------------------------------------------
  */
-static uint8_t g_ssl_buf[ETHERNET_BUF_MAX_SIZE] = {
+static uint8_t g_ssl_send_buf[ETHERNET_BUF_MAX_SIZE] = {
+    0,
+};
+static uint8_t g_ssl_recv_buf[ETHERNET_BUF_MAX_SIZE] = {
     0,
 };
 static uint8_t g_ssl_target_ip[4] = {192, 168, 11, 3};
@@ -131,6 +136,7 @@ void tcp_client_over_ssl_demo(wiz_NetInfo *net_info)
   const int *list = NULL;
   uint16_t len = 0;
   uint32_t start_msec = 0;
+  uint32_t end_msec = 0;
 
   wizchip_network_initialize(net_info);
   wizchip_network_information(net_info);
@@ -210,11 +216,6 @@ void tcp_client_over_ssl_demo(wiz_NetInfo *net_info)
 
   printf(" ok\n    [ Ciphersuite is %s ]\n", mbedtls_ssl_get_ciphersuite(&g_ssl));
 
-  memset(g_ssl_buf, 0x00, ETHERNET_BUF_MAX_SIZE);
-  strcpy((char *)g_ssl_buf, " W5x00 TCP over SSL test\n");
-
-  mbedtls_ssl_write(&g_ssl, g_ssl_buf, strlen((const char *)g_ssl_buf));
-
   /* Infinite loop */
   while (1)
   {
@@ -227,11 +228,25 @@ void tcp_client_over_ssl_demo(wiz_NetInfo *net_info)
         len = ETHERNET_BUF_MAX_SIZE;
       }
 
-      memset(g_ssl_buf, 0x00, ETHERNET_BUF_MAX_SIZE);
+      memset(g_ssl_recv_buf, 0x00, ETHERNET_BUF_MAX_SIZE);
 
-      mbedtls_ssl_read(&g_ssl, g_ssl_buf, len);
+      /* Receive */
+      mbedtls_ssl_read(&g_ssl, g_ssl_recv_buf, len);
 
-      printf("%s", g_ssl_buf);
+      printf("%s", g_ssl_recv_buf);
+    }
+
+    end_msec = wizchip_get_msec_tick();
+
+    if (end_msec > start_msec + SSL_SEND_PERIOD)
+    {
+      memset(g_ssl_send_buf, 0x00, ETHERNET_BUF_MAX_SIZE);
+      strcpy((char *)g_ssl_send_buf, "Hello, World!\n");
+
+      /* Send */
+      mbedtls_ssl_write(&g_ssl, g_ssl_send_buf, strlen((const char *)g_ssl_send_buf));
+
+      start_msec = wizchip_get_msec_tick();
     }
   }
 }

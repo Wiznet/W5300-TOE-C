@@ -20,8 +20,10 @@ The W5300 TOE examples use **W5300 TOE Shield** - ethernet I/O shield compatible
 
 STM32 Nucleo-144 boards support the list below.
 
+- [**NUCLEO-F207ZG**][link-nucleo-f207zg]
 - [**NUCLEO-F429ZI**][link-nucleo-f429zi]
 - [**NUCLEO-F439ZI**][link-nucleo-f439zi]
+- [**NUCLEO-F756ZG**][link-nucleo-f756zg]
 - [**NUCLEO-F767ZI**][link-nucleo-f767zi]
 
 And W5300 TOE Examples supports two IDEs.
@@ -33,6 +35,15 @@ And W5300 TOE Examples supports two IDEs.
     <td align=center>Board</td>
     <td align=center>Example</td>
     <td align=center>Description</td>
+  </tr>
+  <tr>
+    <td align=center rowspan="2">NUCLEO-F207ZG</td>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F207ZG/MDK-ARM"><b>MDK-ARM</b></td>
+    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+  </tr>
+  <tr>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F207ZG/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
+    <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
   </tr>
   <tr>
     <td align=center rowspan="2">NUCLEO-F429ZI</td>
@@ -50,6 +61,15 @@ And W5300 TOE Examples supports two IDEs.
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F439ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
+    <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
+  </tr>
+  <tr>
+    <td align=center rowspan="2">NUCLEO-F756ZG</td>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F756ZG/MDK-ARM"><b>MDK-ARM</b></td>
+    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+  </tr>
+  <tr>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F756ZG/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
     <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
   </tr>
   <tr>
@@ -95,12 +115,22 @@ W5300-TOE-C
 ┃       ┣ inc
 ┃       ┗ src
 ┣ Projects
+┃   ┣ NUCLEO-F207ZG
+┃   ┃   ┣ Core
+┃   ┃   ┣ Drivers
+┃   ┃   ┣ MDK-ARM
+┃   ┃   ┗ STM32CubeIDE
 ┃   ┣ NUCLEO-F429ZI
 ┃   ┃   ┣ Core
 ┃   ┃   ┣ Drivers
 ┃   ┃   ┣ MDK-ARM
 ┃   ┃   ┗ STM32CubeIDE
 ┃   ┣ NUCLEO-F439ZI
+┃   ┃   ┣ Core
+┃   ┃   ┣ Drivers
+┃   ┃   ┣ MDK-ARM
+┃   ┃   ┗ STM32CubeIDE
+┃   ┣ NUCLEO-F756ZG
 ┃   ┃   ┣ Core
 ┃   ┃   ┣ Drivers
 ┃   ┃   ┣ MDK-ARM
@@ -152,12 +182,14 @@ Link
 -->
 
 [link-w5300]: https://docs.wiznet.io/Product/iEthernet/W5300
-[link-w5300_toe_shield]: fill_in_the_blank
+[link-w5300_toe_shield]: https://docs.wiznet.io/Product/iEthernet/W5300/W5300-TOE-Shield
+[link-nucleo-f207zg]: https://www.st.com/en/evaluation-tools/nucleo-f207zg.html
 [link-nucleo-f429zi]: https://www.st.com/en/evaluation-tools/nucleo-f429zi.html
 [link-nucleo-f439zi]: https://www.st.com/en/evaluation-tools/nucleo-f439zi.html
+[link-nucleo-f756zg]: https://www.st.com/en/evaluation-tools/nucleo-f756zg.html
 [link-nucleo-f767zi]: https://www.st.com/en/evaluation-tools/nucleo-f767zi.html
 [link-getting_started]: https://github.com/Wiznet/W5300-TOE-C/blob/main/Static/documents/getting_started.md
 [link-datasheet_w5300]: https://docs.wiznet.io/img/products/w5300/W5300_DS_V134E.pdf
-[link-datasheet_w5300_toe_shield]: fill_in_the_blank
+[link-datasheet_w5300_toe_shield]: https://docs.wiznet.io/Product/iEthernet/W5300/W5300-TOE-Shield
 [link-w5300-toe-arduino]: https://github.com/Wiznet/W5300-TOE-Arduino
 [link-w5300-toe-micropython]: https://github.com/Wiznet/W5300-TOE-MicroPython
