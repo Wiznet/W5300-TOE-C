@@ -18,12 +18,13 @@ These sections will guide you through a series of steps from configuring develop
     - [**NUCLEO-F207ZG**][link-nucleo-f207zg]
     - [**NUCLEO-F429ZI**][link-nucleo-f429zi]
     - [**NUCLEO-F439ZI**][link-nucleo-f439zi]
+    - [**NUCLEO-F722ZE**][link-nucleo-f722ze]
     - [**NUCLEO-F756ZG**][link-nucleo-f756zg]
     - [**NUCLEO-F767ZI**][link-nucleo-f767zi]
 - **Desktop or Laptop**
 - **USB Type-B Micro 5 Pin Cable**
 
-**※ Currently, W5300 TOE examples only support NUCLEO-F207ZG, NUCLEO-F429ZI, NUCLEO-F439ZI, NUCLEO-F756ZG and NUCLEO-F767ZI, so please refer to this.**
+**※ Currently, W5300 TOE examples only support NUCLEO-F207ZG, NUCLEO-F429ZI, NUCLEO-F439ZI, NUCLEO-F722ZE, NUCLEO-F756ZG and NUCLEO-F767ZI, so please refer to this.**
 
 
 
@@ -87,6 +88,7 @@ Link
 [link-nucleo-f207zg]: https://www.st.com/en/evaluation-tools/nucleo-f207zg.html
 [link-nucleo-f429zi]: https://www.st.com/en/evaluation-tools/nucleo-f429zi.html
 [link-nucleo-f439zi]: https://www.st.com/en/evaluation-tools/nucleo-f439zi.html
+[link-nucleo-f722ze]: https://www.st.com/en/evaluation-tools/nucleo-f722ze.html
 [link-nucleo-f756zg]: https://www.st.com/en/evaluation-tools/nucleo-f756zg.html
 [link-nucleo-f767zi]: https://www.st.com/en/evaluation-tools/nucleo-f767zi.html
 [link-dhcp]: https://github.com/Wiznet/W5300-TOE-C/tree/main/Examples/dhcp

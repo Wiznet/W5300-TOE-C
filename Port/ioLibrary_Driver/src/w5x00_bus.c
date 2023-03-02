@@ -15,7 +15,7 @@
 #include "stm32f2xx_hal.h"
 #elif defined(STM32F429xx) || (STM32F439xx)
 #include "stm32f4xx_hal.h"
-#elif defined(STM32F756xx) || (STM32F767xx)
+#elif defined(STM32F722xx) || (STM32F756xx) || (STM32F767xx)
 #include "stm32f7xx_hal.h"
 #endif
 

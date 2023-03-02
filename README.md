@@ -23,6 +23,7 @@ STM32 Nucleo-144 boards support the list below.
 - [**NUCLEO-F207ZG**][link-nucleo-f207zg]
 - [**NUCLEO-F429ZI**][link-nucleo-f429zi]
 - [**NUCLEO-F439ZI**][link-nucleo-f439zi]
+- [**NUCLEO-F722ZE**][link-nucleo-f722ze]
 - [**NUCLEO-F756ZG**][link-nucleo-f756zg]
 - [**NUCLEO-F767ZI**][link-nucleo-f767zi]
 
@@ -61,6 +62,15 @@ And W5300 TOE Examples supports two IDEs.
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F439ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
+    <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
+  </tr>
+  <tr>
+    <td align=center rowspan="2">NUCLEO-F722ZE</td>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F722ZE/MDK-ARM"><b>MDK-ARM</b></td>
+    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+  </tr>
+  <tr>
+    <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F722ZE/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
     <td>C-based example implemented using <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE.</td>
   </tr>
   <tr>
@@ -130,6 +140,11 @@ W5300-TOE-C
 ┃   ┃   ┣ Drivers
 ┃   ┃   ┣ MDK-ARM
 ┃   ┃   ┗ STM32CubeIDE
+┃   ┣ NUCLEO-F722ZE
+┃   ┃   ┣ Core
+┃   ┃   ┣ Drivers
+┃   ┃   ┣ MDK-ARM
+┃   ┃   ┗ STM32CubeIDE
 ┃   ┣ NUCLEO-F756ZG
 ┃   ┃   ┣ Core
 ┃   ┃   ┣ Drivers
@@ -186,6 +201,7 @@ Link
 [link-nucleo-f207zg]: https://www.st.com/en/evaluation-tools/nucleo-f207zg.html
 [link-nucleo-f429zi]: https://www.st.com/en/evaluation-tools/nucleo-f429zi.html
 [link-nucleo-f439zi]: https://www.st.com/en/evaluation-tools/nucleo-f439zi.html
+[link-nucleo-f722ze]: https://www.st.com/en/evaluation-tools/nucleo-f722ze.html
 [link-nucleo-f756zg]: https://www.st.com/en/evaluation-tools/nucleo-f756zg.html
 [link-nucleo-f767zi]: https://www.st.com/en/evaluation-tools/nucleo-f767zi.html
 [link-getting_started]: https://github.com/Wiznet/W5300-TOE-C/blob/main/Static/documents/getting_started.md
