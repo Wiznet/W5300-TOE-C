@@ -34,12 +34,12 @@
 		<link>
 			<name>Examples</name>
 			<type>2</type>
-			<locationURI>$%7BPARENT-3-PROJECT_LOC%7D/Examples</locationURI>
+			<location>D:/Austin/STM32x/_Integration/W5300-TOE-C/Examples</location>
 		</link>
 		<link>
 			<name>Libraries</name>
 			<type>2</type>
-			<locationURI>$%7BPARENT-3-PROJECT_LOC%7D/Libraries</locationURI>
+			<location>D:/Austin/STM32x/_Integration/W5300-TOE-C/Libraries</location>
 		</link>
 		<link>
 			<name>NUCLEO-F756ZG.ioc</name>
@@ -49,7 +49,7 @@
 		<link>
 			<name>Port</name>
 			<type>2</type>
-			<locationURI>$%7BPARENT-3-PROJECT_LOC%7D/Port</locationURI>
+			<location>D:/Austin/STM32x/_Integration/W5300-TOE-C/Port</location>
 		</link>
 		<link>
 			<name>Drivers/CMSIS/system_stm32f7xx.c</name>
