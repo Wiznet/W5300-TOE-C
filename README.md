@@ -40,7 +40,7 @@ And W5300 TOE Examples supports two IDEs.
   <tr>
     <td align=center rowspan="2">NUCLEO-F207ZG</td>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F207ZG/MDK-ARM"><b>MDK-ARM</b></td>
-    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+    <td>C-based example implemented using <a href="https://www.keil.com/mdk5/uvision/">MDK-ARM.</td>
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F207ZG/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
@@ -49,7 +49,7 @@ And W5300 TOE Examples supports two IDEs.
   <tr>
     <td align=center rowspan="2">NUCLEO-F429ZI</td>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F429ZI/MDK-ARM"><b>MDK-ARM</b></td>
-    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+    <td>C-based example implemented using <a href="https://www.keil.com/mdk5/uvision/">MDK-ARM.</td>
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F429ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
@@ -58,7 +58,7 @@ And W5300 TOE Examples supports two IDEs.
   <tr>
     <td align=center rowspan="2">NUCLEO-F439ZI</td>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F439ZI/MDK-ARM"><b>MDK-ARM</b></td>
-    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+    <td>C-based example implemented using <a href="https://www.keil.com/mdk5/uvision/">MDK-ARM.</td>
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F439ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
@@ -67,7 +67,7 @@ And W5300 TOE Examples supports two IDEs.
   <tr>
     <td align=center rowspan="2">NUCLEO-F722ZE</td>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F722ZE/MDK-ARM"><b>MDK-ARM</b></td>
-    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+    <td>C-based example implemented using <a href="https://www.keil.com/mdk5/uvision/">MDK-ARM.</td>
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F722ZE/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
@@ -76,7 +76,7 @@ And W5300 TOE Examples supports two IDEs.
   <tr>
     <td align=center rowspan="2">NUCLEO-F756ZG</td>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F756ZG/MDK-ARM"><b>MDK-ARM</b></td>
-    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+    <td>C-based example implemented using <a href="https://www.keil.com/mdk5/uvision/">MDK-ARM.</td>
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F756ZG/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
@@ -85,7 +85,7 @@ And W5300 TOE Examples supports two IDEs.
   <tr>
     <td align=center rowspan="2">NUCLEO-F767ZI</td>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F767ZI/MDK-ARM"><b>MDK-ARM</b></td>
-    <td>C-based example implemented using <a href="https://www2.keil.com/mdk5/uvision/">MDK-ARM.</td>
+    <td>C-based example implemented using <a href="https://www.keil.com/mdk5/uvision/">MDK-ARM.</td>
   </tr>
   <tr>
     <td align=center><a href="https://github.com/Wiznet/W5300-TOE-C/tree/main/Projects/NUCLEO-F767ZI/STM32CubeIDE"><b>STM32CubeIDE</b></td></td>
