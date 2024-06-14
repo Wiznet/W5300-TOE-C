@@ -49,12 +49,12 @@ static inline void wizchip_deselect(void)
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_7, GPIO_PIN_SET);
 }
 
-static inline uint16_t wizchip_read(uint32_t addr)
+static inline iodata_t wizchip_read(uint32_t addr)
 {
   return _W5300_DATA(addr);
 }
 
-static inline void wizchip_write(uint32_t addr, uint16_t tx_data)
+static inline void wizchip_write(uint32_t addr, iodata_t tx_data)
 {
   _W5300_DATA(addr) = tx_data;
 }

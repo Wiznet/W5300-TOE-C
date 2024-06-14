@@ -34,12 +34,15 @@ static uint8_t g_loopback_buf[ETHERNET_BUF_MAX_SIZE] = {
     0,
 };
 
+static uint8_t dest_ip[4] = {192, 168, 11, 74};
+static uint16_t dest_port = 5000;
+
 /**
  * ----------------------------------------------------------------------------------------------------
  * Functions
  * ----------------------------------------------------------------------------------------------------
  */
-void loopback_demo(wiz_NetInfo *net_info)
+void loopback_server_demo(wiz_NetInfo *net_info)
 {
   int retval = 0;
 
@@ -57,5 +60,26 @@ void loopback_demo(wiz_NetInfo *net_info)
       while (1)
         ;
     }
+  }
+}
+
+void loopback_client_demo(wiz_NetInfo *net_info)
+{
+  int retval = 0;
+
+  wizchip_network_initialize(net_info);
+  wizchip_network_information(net_info);
+
+  /* Infinite loop */
+  while (1)
+  {
+	/* Run TCP client loopback */
+	if ((retval = loopback_tcpc(SOCKET_LOOPBACK, g_loopback_buf, dest_ip, dest_port)) < 0)
+	{
+	  printf(" Loopback error : %d\n", retval);
+
+	  while (1)
+		;
+	}
   }
 }

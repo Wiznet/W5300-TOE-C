@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+c/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.c
@@ -152,9 +152,12 @@ int main(void)
 #ifdef APP_TCP_CLIENT_OVER_SSL
   tcp_client_over_ssl_demo(&net_info);
 #endif /* APP_TCP_CLIENT_OVER_SSL */
-#ifdef APP_LOOPBACK
-  loopback_demo(&net_info);
-#endif /* APP_LOOPBACK */
+#ifdef APP_LOOPBACK_SERVER
+  loopback_server_demo(&net_info);
+#endif /* APP_LOOPBACK SERVER*/
+#ifdef APP_LOOPBACK_CLIENT
+  loopback_client_demo(&net_info);
+#endif /* APP_LOOPBACK CLIENT*/
 // ----------------------------------------------------------------------------------------------------
   /* USER CODE END 2 */
 

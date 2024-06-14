@@ -24,8 +24,12 @@ extern "C"
  * ----------------------------------------------------------------------------------------------------
  */
 #define W5300_BANK_ADDR ((uint32_t)0x60000000)
-#define _W5300_DATA(p) *(volatile unsigned short *)(W5300_BANK_ADDR + (p << 1))
 
+#if _WIZCHIP_IO_BUS_WIDTH_ == 8
+#define _W5300_DATA(p) *(volatile iodata_t *)(W5300_BANK_ADDR + p)
+#elif _WIZCHIP_IO_BUS_WIDTH_ == 16
+#define _W5300_DATA(p) *(volatile unsigned short *)(W5300_BANK_ADDR + (p << 1))
+#endif
 /**
  * ----------------------------------------------------------------------------------------------------
  * Variables
@@ -39,8 +43,8 @@ extern "C"
  */
 static inline void wizchip_select(void);
 static inline void wizchip_deselect(void);
-static inline uint16_t wizchip_read(uint32_t addr);
-static inline void wizchip_write(uint32_t addr, uint16_t tx_data);
+static inline iodata_t wizchip_read(uint32_t addr);
+static inline void wizchip_write(uint32_t addr, iodata_t tx_data);
 void wizchip_initialize(void);
 void wizchip_reset(void);
 void wizchip_check(void);

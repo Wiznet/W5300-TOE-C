@@ -172,7 +172,7 @@ extern "C" {
     * @todo you should select the bus width. Select one of 8 or 16.
     */
    #ifndef _WIZCHIP_IO_BUS_WIDTH_
-   #define _WIZCHIP_IO_BUS_WIDTH_       16  // 8
+   #define _WIZCHIP_IO_BUS_WIDTH_       8  // 16
    #endif
    #if _WIZCHIP_IO_BUS_WIDTH_ == 8
       typedef   uint8_t   iodata_t;
